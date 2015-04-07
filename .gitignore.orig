@@ -1,0 +1,13 @@
+_site
+<<<<<<< HEAD
+.DS_Store
+.jekyll
+.bundle
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
+package.json
+=======
+.sass-cache
+>>>>>>> Created new site.
