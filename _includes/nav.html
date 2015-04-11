@@ -15,14 +15,14 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav navbar-right">
  
-    {% for dale in site.data.nav %}
+    {% for menu in site.data.nav %}
  
     <!-- check to see if the data file has a submenu, and if so display it -->
-    {% if dale.subcategories != null %}
+    {% if menu.subcategories != null %}
     <li class="dropdown">
-    <a href="{{ site.url }}{{ dale.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ dale.title }}<i class="fa fa-angle-down"></i></a>
+    <a href="{{ site.url }}{{ menu.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ menu.title }}<i class="fa fa-angle-down"></i></a>
     <ul class="dropdown-menu">
-    {% for subcategory in dale.subcategories %}
+    {% for subcategory in menu.subcategories %}
     <li><a href="{{ site.url }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
     {% endfor %}
     </ul>
@@ -30,7 +30,7 @@
  
     <! display the top level navigation for items that don't have a submenu -->
     <li>
-    <a href="{{ site.url }}{{ dale.href }}">{{ dale.title }}</a>
+    <a href="{{ site.url }}{{ menu.href }}">{{ menu.title }}</a>
     {% endif %}
     </li>
     {% endfor %}
