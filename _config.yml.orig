@@ -79,11 +79,11 @@ title: Interactor Tracing
 email: dawa2323 at hotmail.com
 description: > # this means to ignore newlines until "baseurl:"
   What is interactor tracing
-baseurl: "/interactor-tracing-blog/" # the subpath of your site, e.g. /blog/
-url: "http://dawallin.github.io/interactor-tracing-blog" # the base hostname & protocol for your site
+baseurl: "/interactor-tracing/" # the subpath of your site, e.g. /blog/
+url: "http://dawallin.github.io/interactor-tracing" # the base hostname & protocol for your site
 twitter_username: dawallin
 github_username:  dawallin
 
 # Build settings
 markdown: kramdown
->>>>>>> Tried to change baseurl to get CSS working
+>>>>>>> Updated _config.yml to new site address.
